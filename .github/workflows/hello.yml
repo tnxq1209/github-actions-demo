@@ -1,0 +1,13 @@
+# Workflows: Workflow should have a name
+name: Hello
+on: #Tells when the workflow should run
+  workflow_dispatch:
+
+# Jobs: Should be inside Workflow and tells what the workflow should do.(can be more than one)
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest #Runs an ephemeral container.
+# Steps: Each job require steps to run the commands for the said job.
+    steps:
+      - name: Say Hello
+        run: echo "Hello"
