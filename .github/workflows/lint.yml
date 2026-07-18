@@ -14,3 +14,7 @@ jobs:
       # Installing the linting tool
       - name: Install linter
         run: pip install ruff
+      # Running the linter to check the code.
+      - name: Check the code
+        run: ruff check .
+      
