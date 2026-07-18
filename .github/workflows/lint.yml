@@ -11,4 +11,6 @@ jobs:
     steps: ## clone the code from the current branch into the runner.
       - name: Chekout/Clone the code
         uses: actions/checkout@v7
-        
+      # Installing the linting tool
+      - name: Install linter
+        run: pip install ruff
